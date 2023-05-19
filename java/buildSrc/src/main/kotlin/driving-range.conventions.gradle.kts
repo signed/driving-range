@@ -7,8 +7,8 @@ repositories {
 }
 
 dependencies {
-    testImplementation("org.hamcrest:hamcrest-core:1.3")
-    testImplementation(platform("org.junit:junit-bom:5.7.0"))
+    testImplementation("org.hamcrest:hamcrest:2.2")
+    testImplementation(platform("org.junit:junit-bom:5.9.3"))
     testImplementation("org.junit.jupiter:junit-jupiter")
 }
 
@@ -21,6 +21,6 @@ tasks.test {
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(14))
+        languageVersion.set(JavaLanguageVersion.of(17))
     }
 }
