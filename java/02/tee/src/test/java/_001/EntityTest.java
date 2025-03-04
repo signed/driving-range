@@ -31,7 +31,8 @@ class EntityTest {
         Entity entity = new Entity();
         entity.foo = true;
 
-        assertThat("true should be copied from the entity", entity.isFoo());
+        final var foobar = new DefaultFoobarAccess().getFoobar(entity);
+        assertThat("true should be copied from the entity", foobar.foo());
     }
 
     @Test
@@ -39,7 +40,8 @@ class EntityTest {
         Entity entity = new Entity();
         entity.bar = 42L;
 
-        assertThat(entity.getBar(), equalTo(42L));
+        final var foobar = new DefaultFoobarAccess().getFoobar(entity);
+        assertThat(foobar.bar(), equalTo(42L));
     }
 
     private List<String> newArrayList(String... elements) {
