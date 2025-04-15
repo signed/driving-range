@@ -2,6 +2,7 @@ package _003;
 
 import org.junit.jupiter.api.Test;
 
+import static _003.Messages.greet;
 import static org.hamcrest.CoreMatchers.hasItems;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -22,7 +23,7 @@ class BillboardGreetingTest {
     }
 
     private void bookGreetingFor(String john) {
-        new Billboard(display).greet(john);
+        new Billboard(display).accept(greet(john));
     }
 
 }

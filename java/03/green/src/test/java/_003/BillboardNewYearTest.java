@@ -2,6 +2,7 @@ package _003;
 
 import org.junit.jupiter.api.Test;
 
+import static _003.Billboard.happyNewYear;
 import static org.hamcrest.CoreMatchers.hasItems;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -21,6 +22,6 @@ class BillboardNewYearTest {
     }
 
     private void happyNewYearOf(int year) {
-        new Billboard(display).happyNewYear(year);
+        new Billboard(display).accept(happyNewYear(year));
     }
 }

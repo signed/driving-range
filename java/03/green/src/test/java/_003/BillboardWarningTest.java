@@ -2,6 +2,7 @@ package _003;
 
 import org.junit.jupiter.api.Test;
 
+import static _003.Messages.warn;
 import static org.hamcrest.CoreMatchers.hasItems;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -22,7 +23,7 @@ class BillboardWarningTest {
     }
 
     private void warnAbout(String topic) {
-        new Billboard(display).warn(topic);
+        new Billboard(display).accept(warn(topic));
     }
 
 }
