@@ -1,7 +1,5 @@
 package _003;
 
-import java.text.MessageFormat;
-
 public class Billboard {
 
     private final Display display;
