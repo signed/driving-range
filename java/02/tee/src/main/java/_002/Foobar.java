@@ -1,4 +1,4 @@
-package _001;
+package _002;
 
 record Foobar(boolean foo, Long bar) {
 }

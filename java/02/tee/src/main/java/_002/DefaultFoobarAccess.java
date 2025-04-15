@@ -1,4 +1,4 @@
-package _001;
+package _002;
 
 class DefaultFoobarAccess implements  FooBarAccess{
     @Override

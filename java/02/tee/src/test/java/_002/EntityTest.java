@@ -1,5 +1,7 @@
-package _001;
+package _002;
 
+import _002.DefaultFoobarAccess;
+import _002.Entity;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
