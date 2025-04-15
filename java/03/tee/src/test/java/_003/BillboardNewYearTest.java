@@ -10,17 +10,17 @@ class BillboardNewYearTest {
 
     @Test
     void happyNewYear2025() {
-        happyNewYear(2025);
+        happyNewYearOf(2025);
         assertThat(display.shownMessages(), hasItems("Happy New Year!\n2025"));
     }
 
     @Test
     void happyNewYear2000() {
-        happyNewYear(2000);
+        happyNewYearOf(2000);
         assertThat(display.shownMessages(), hasItems("Happy New Year!\n2000"));
     }
 
-    private void happyNewYear(int year) {
+    private void happyNewYearOf(int year) {
         new Billboard(display).happyNewYear(year);
     }
 }

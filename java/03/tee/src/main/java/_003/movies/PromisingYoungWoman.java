@@ -1,7 +1,6 @@
 package _003.movies;
 
 import _003.Billboard;
-import _003.Display;
 
 public class PromisingYoungWoman {
     public void playback(Billboard billboard) {
