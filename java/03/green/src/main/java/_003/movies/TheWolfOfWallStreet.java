@@ -8,8 +8,8 @@ import static _003.Messages.greet;
 public class TheWolfOfWallStreet {
 
     public void playback(Billboard billboard) {
-        billboard.accept(happyNewYear(2013));
-        billboard.accept(greet("Jordan"));
-        billboard.accept(greet("Donnie"));
+        billboard.message(happyNewYear(2013));
+        billboard.message(greet("Jordan"));
+        billboard.message(greet("Donnie"));
     }
 }

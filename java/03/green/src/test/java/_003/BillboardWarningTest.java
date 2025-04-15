@@ -23,7 +23,7 @@ class BillboardWarningTest {
     }
 
     private void warnAbout(String topic) {
-        new Billboard(display).accept(warn(topic));
+        new Billboard(display).message(warn(topic));
     }
 
 }

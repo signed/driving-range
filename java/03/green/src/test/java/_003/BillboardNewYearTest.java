@@ -22,6 +22,6 @@ class BillboardNewYearTest {
     }
 
     private void happyNewYearOf(int year) {
-        new Billboard(display).accept(happyNewYear(year));
+        new Billboard(display).message(happyNewYear(year));
     }
 }

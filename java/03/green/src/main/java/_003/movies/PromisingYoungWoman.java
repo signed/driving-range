@@ -8,9 +8,9 @@ import static _003.Messages.warn;
 
 public class PromisingYoungWoman {
     public void playback(Billboard billboard) {
-        billboard.accept(happyNewYear(2020));
-        billboard.accept(greet("Cassandra"));
-        billboard.accept(greet("Ryan"));
-        billboard.accept(warn("Smart and Cunning"));
+        billboard.message(happyNewYear(2020));
+        billboard.message(greet("Cassandra"));
+        billboard.message(greet("Ryan"));
+        billboard.message(warn("Smart and Cunning"));
     }
 }

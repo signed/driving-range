@@ -9,10 +9,10 @@ import static _003.Messages.warn;
 public class Terminator {
 
     public void playback(Billboard billboard) {
-        billboard.accept(happyNewYear(1984));
-        billboard.accept(greet("Sarah"));
-        billboard.accept(warn("Terminator"));
-        billboard.accept(greet("John"));
-        billboard.accept(warn("Molten Metal"));
+        billboard.message(happyNewYear(1984));
+        billboard.message(greet("Sarah"));
+        billboard.message(warn("Terminator"));
+        billboard.message(greet("John"));
+        billboard.message(warn("Molten Metal"));
     }
 }

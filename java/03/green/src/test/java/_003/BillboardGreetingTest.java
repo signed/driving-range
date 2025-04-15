@@ -23,7 +23,7 @@ class BillboardGreetingTest {
     }
 
     private void bookGreetingFor(String john) {
-        new Billboard(display).accept(greet(john));
+        new Billboard(display).message(greet(john));
     }
 
 }

@@ -12,7 +12,7 @@ public class Billboard {
         this.display = display;
     }
 
-    public void accept(String message) {
+    public void message(String message) {
         display.show(message);
     }
 }
