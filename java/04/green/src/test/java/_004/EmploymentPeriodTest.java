@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class ProductionTest {
+class EmploymentPeriodTest {
     @Test
     void templateTest() {
-        assertThat(Production.template()).isEqualTo("template refactored");
+        assertThat(EmploymentPeriod.template()).isEqualTo("template");
     }
 }
